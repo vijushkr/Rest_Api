@@ -37,7 +37,7 @@ RUN apt-get update && apt-get install -y mongodb-org
 #EXPOSE 27017
 #ENTRYPOINT ["/usr/bin/mongod", "--config", "/etc/mongodb.conf"]
 #
-RUN apt-get install systemd
+RUN apt-get install systemd -y
 RUN systemctl start mongod.service
 # install Python modules needed by the Python app
 COPY requirement.txt /usr/src/app/
