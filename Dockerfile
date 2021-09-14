@@ -56,5 +56,5 @@ EXPOSE 8000
 
 # run the application
 
-CMD ["python", "/usr/src/app/manage.py", "migrate"]
-CMD ["python", "/usr/src/app/manage.py", "runserver"]
+CMD ["python3", "/usr/src/app/manage.py", "migrate"]
+CMD ["python3", "/usr/src/app/manage.py", "runserver"]
