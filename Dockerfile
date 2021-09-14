@@ -21,7 +21,7 @@ RUN /bin/bash -c "source ~/.bashrc"
 
 # Install pip
 RUN apt install python3-pip -y
-RUN python -m pip install --upgrade pip
+RUN python3 -m pip install --upgrade pip
 
 #install mongodb
 RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 0C49F3730359A14518585931BC711F9BA15703C6
