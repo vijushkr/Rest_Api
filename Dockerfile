@@ -55,6 +55,7 @@ COPY manage.py  /usr/src/app/
 EXPOSE 8000
 
 # run the application
-
-CMD ["python3", "/usr/src/app/manage.py", "migrate"]
-CMD ["python3", "/usr/src/app/manage.py", "runserver"]
+RUN pwd
+RUN cd /usr/src/app
+CMD ["python3", "manage.py", "migrate"]
+CMD ["python3", "manage.py", "runserver"]
