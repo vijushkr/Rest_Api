@@ -43,10 +43,12 @@ RUN service mongodb start
 COPY requirement.txt /usr/src/app/
 RUN pip install --no-cache-dir -r /usr/src/app/requirement.txt
 
+RUN mkdir /usr/src/app/hospitalmanagement/
 # copy files required for the app to run
-COPY hospitalmanagement/  /usr/src/app/
+COPY hospitalmanagement/  /usr/src/app/hospitalmanagement/
 
-COPY hospitalweb/  /usr/src/app/
+RUN mkdir /usr/src/app/hospitalweb/
+COPY hospitalweb/  /usr/src/app/hospitalweb/
 
 COPY manage.py  /usr/src/app/
 
