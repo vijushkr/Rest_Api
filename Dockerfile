@@ -44,9 +44,9 @@ COPY requirement.txt /usr/src/app/
 RUN pip install --no-cache-dir -r /usr/src/app/requirement.txt
 
 # copy files required for the app to run
-COPY hospitalmanagement  /usr/src/app/
+COPY hospitalmanagement/  /usr/src/app/
 
-COPY hospitalweb  /usr/src/app/
+COPY hospitalweb/  /usr/src/app/
 
 COPY manage.py  /usr/src/app/
 
