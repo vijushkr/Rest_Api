@@ -57,5 +57,5 @@ EXPOSE 8000
 # run the application
 RUN pwd
 RUN cd /usr/src/app
-CMD ["python3", "manage.py", "migrate"]
-CMD ["python3", "manage.py", "runserver"]
+#CMD ["python3", "manage.py", "migrate"]
+#CMD ["python3", "manage.py", "runserver"]
